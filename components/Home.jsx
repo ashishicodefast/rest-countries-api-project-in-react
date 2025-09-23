@@ -1,4 +1,3 @@
-import Header from "./header";
 import HomeMainSection from "./HomeMainSection";
 
 import "../assets/css/style.css";
