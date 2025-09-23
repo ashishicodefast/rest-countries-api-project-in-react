@@ -1,0 +1,55 @@
+/* ==============================================country page css ===============================================*/
+.back-btn {
+  padding: 10px 40px;
+  margin: 40px 0px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+.back-btn:active {
+  transform: translateY(2px) scale(0.9);
+}
+
+.details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.details-wrapper .fit {
+  width: 50%;
+}
+.details-wrapper img {
+  max-width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.country-information {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.country-information p {
+  margin: 10px 0px;
+}
+.other-country-detail {
+  margin-top: 40px;
+}
+.other-country-detail p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+.other-country-detail p a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 6px 30px;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+}

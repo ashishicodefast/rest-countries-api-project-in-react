@@ -1,0 +1,112 @@
+/* ==============================================country page css ===============================================*/
+.back-btn {
+  padding: 10px 40px;
+  margin: 40px 0px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+.back-btn:active {
+  transform: translateY(2px) scale(0.9);
+}
+
+.details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.details-wrapper .fit {
+  width: 50%;
+}
+.details-wrapper img {
+  max-width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.country-information {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.country-information p {
+  margin: 10px 0px;
+}
+.other-country-detail {
+  margin-top: 40px;
+}
+.other-country-detail p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+}
+.other-country-detail p a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 6px 30px;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width: 900px) {
+  .details-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  .details-wrapper .fit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 20px;
+  }
+  .container {
+    margin: 0px 30px;
+  }
+  .search-section {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+  .search-section .filter-option {
+    background-color: var(--primary-color);
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .search-section .search-bar {
+    width: 100%;
+  }
+  .country-information {
+    margin: 20px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .skeleton-detail-card {
+    height: 600px;
+    flex-direction: column;
+  }
+  .skeleton-details,.skeleton-details:first-child {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 16px;
+  }
+  .theme-changer {
+    font-size: 15px;
+  }
+  .container {
+    margin: 0px 25px;
+  }
+}
